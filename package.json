@@ -1,0 +1,90 @@
+{
+	"name": "basic",
+	"version": "0.0.1",
+	"description": "Basic FE set-up",
+	"main": "gulpfile.js",
+	"author": "Yannick Van Avermaet",
+	"clean": [
+		"dist/"
+	],
+	"js": {
+		"files": [
+			{
+				"src": [
+					"src/js/**/*.js"
+				],
+				"dest": "dist/js/",
+				"file": "main.js"
+			}
+		],
+		"hint": {
+			"src": [
+				"src/js/**/*.js"
+			]
+		},
+		"watch": "src/js/**/*.js"
+	},
+	"sass": {
+		"files": [
+			{
+				"src": [
+					"src/sass/**/*.scss"
+				],
+				"dest": "dist/css/",
+				"file": "main.css"
+			}
+		],
+		"hint": {
+			"src": [
+				"src/sass/**/*.scss"
+			]
+		},
+		"watch": "src/sass/**/*.scss",
+		"autoprefixer": {
+			"browsers": [
+				"Firefox >=27",
+				"Chrome >= 33",
+				"ie >= 9",
+				"Safari >= 7",
+				"iOS >= 7",
+				"Android >= 4.1"
+			]
+		}
+	},
+	"img": {
+		"src": "src/img/**/*",
+		"dest": "dist/img/",
+		"watch": "src/img/**/*"
+	},
+	"fonts": {
+		"src": "src/fonts/**/*",
+		"dest": "dist/fonts/",
+		"watch": "src/fonts/**/*"
+	},
+	"html": {
+		"src": "src/html/",
+		"dest": "dist/html",
+		"watch": "src/html/**/*.html"
+	},
+	"devDependencies": {
+		"browser-sync": "2.11.2",
+		"del": "^2.2.0",
+		"gulp": "^3.9.0",
+		"gulp-autoprefixer": "^3.1.0",
+		"gulp-bless": "^3.0.1",
+		"gulp-cached": "^1.1.0",
+		"gulp-concat": "^2.6.0",
+		"gulp-copy": "^0.0.2",
+		"gulp-eslint": "^1.1.1",
+		"gulp-imagemin": "^2.4.0",
+		"gulp-notify": "^2.2.0",
+		"gulp-plumber": "^1.0.1",
+		"gulp-sass": "^2.1.1",
+		"gulp-scss-lint": "^0.3.8",
+		"gulp-shell": "^0.5.1",
+		"gulp-sourcemaps": "^1.6.0",
+		"gulp-uglify": "^1.5.1",
+		"gulp-util": "^3.0.7",
+		"imagemin-pngquant": "^4.2.0"
+	}
+}
