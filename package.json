@@ -63,7 +63,7 @@
 	},
 	"html": {
 		"src": "src/html/",
-		"dest": "dist/html",
+		"dest": "dist",
 		"watch": "src/html/**/*.html"
 	},
 	"devDependencies": {
