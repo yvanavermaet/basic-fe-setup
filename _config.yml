@@ -1,0 +1,3 @@
+source: src/html/
+destination: dist
+keep_files: [fonts, img, js, css]

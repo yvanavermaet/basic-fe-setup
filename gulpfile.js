@@ -187,12 +187,12 @@ gulp.task('sassbuild', function() {
 
 // html
 gulp.task('htmlbuild', function() {
-	var jekyll = child.exec('jekyll build --source ' + pkg.html.src  + ' --destination ' + pkg.html.dest),
+	var jekyll = child.exec('jekyll build'),
 		jekyllLogger = function (buffer) {
 			buffer.toString()
 				.split(/\n/)
 				.forEach(function (message) {
-					gUtil.log('Jekyll: ' + message)
+					gUtil.log('Jekyll: ' + message);
 				});
 		};
 

@@ -62,7 +62,6 @@
 		"watch": "src/fonts/**/*"
 	},
 	"html": {
-		"src": "src/html/",
 		"dest": "dist",
 		"watch": "src/html/**/*.html"
 	},
